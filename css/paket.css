@@ -4,13 +4,32 @@
 
 .list-paket {
   height: 90vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.397), rgba(255, 255, 255, 0.397)), url("../images/4853433.jpg") no-repeat center;
+  background: linear-gradient(rgba(255, 255, 255, 0.397), rgba(255, 255, 255, 0.397)), url("../images/4853433.jpg") ;
   background-size: cover;
   color: #353b48;
-  padding: 20px;
   display: block;
   justify-items: center;
   align-items: center;
+  text-align: center;
+}
+ 
+.list-paket h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding-top:47px;
+}
+
+.list-paket h3 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color:red;
 }
 
 .paket {
@@ -19,7 +38,6 @@
   height: 400px;
 }
 .column {
-  text-align: center;
   float: left;
   width: 31%;
   padding: 10px;
@@ -32,8 +50,9 @@
 
 .column img {
   max-width: 75%;
-  height: 200px;
+  height: 8em;
 }
+
 
 .column p {
   font-size: 15px;
@@ -46,7 +65,7 @@
 }
 
 .column h5 {
-  font-size: 2.5vw;
+  font-size: 24px;
   font-weight: normal;
   text-align: center;
   margin: 0;
@@ -55,14 +74,13 @@
 }
 
 .column h6 {
-  font-size: 25px;
+  font-size: 27px;
   font-weight: normal;
   text-align: center;
   margin: 0;
   font-style: italic;
   font-family: Arial, Helvetica, sans-serif;
-}
-
+ }
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 900px) {
   .list-paket {
@@ -73,10 +91,12 @@
   }
 }
 
-.satu {
-  background-color: rgb(53, 59, 72, 0.2);
-  animation: fromkiri 3s;
-  position: relative;
+.column strong{
+    font-size:25px;
+    margin:15px;
+    margin-bottom: 0;
+    font-weight: normal;
+    display:inline-block;
 }
 
 .harga {
@@ -123,6 +143,11 @@
   color: #353b48;
 }
 
+.hanya {
+    color:red;
+    margin-top: 0;
+}
+
 @keyframes fromkiri {
   from {
     left: -30%;
@@ -135,14 +160,41 @@
   }
 }
 
+.satu {
+    background-color: rgb(53, 59, 72, 0.2);
+    animation: fromkiri 3s;
+    position: relative;
+  }
+
 .dua {
-  background-color: rgb(234, 242, 244);
+  background-color: rgba(227, 183, 117, 0.203);
   animation: fromkiri 2s;
   position: relative;
 }
 
 .tiga {
-  background-color: rgb(222, 211, 212, 0.3);
+  background-color: rgba(207, 150, 154, 0.3);
   animation: fromkiri 1s;
   position: relative;
+}
+
+.satu:hover {
+  transition-duration: 1s;
+  transition-delay: 0.2s;
+transform: scale(1.1);
+background-color: rgba(53, 59, 72, 0.749);
+}
+
+.dua:hover {
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+  transform: scale(1.1);
+  background-color: rgba(227, 183, 117, 0.604);
+}
+
+.tiga:hover {
+    transition-duration: 1s;
+    transition-delay: 0.2;
+  transform: scale(1.1);
+  background-color: rgba(207, 150, 154, 0.733);
 }
